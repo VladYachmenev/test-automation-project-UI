@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="207d8a78-1ea4-45d1-8034-66cedf3f7319" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOCATOS/element_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOCATOS/element_locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOCATOS/elements_filled.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOCATOS/elements_filled.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PAGES/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/PAGES/base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TESTS/test_element_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/TESTS/test_element_test.py" afterDir="false" />
-    </list>
+    <list default="true" id="207d8a78-1ea4-45d1-8034-66cedf3f7319" name="Changes" comment="-create checkbox test&#10;-create radiobutton test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,7 +177,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723455638884</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="-create checkbox test&#10;-create radiobutton test">
+      <option name="closed" value="true" />
+      <created>1723903767505</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723903767505</updated>
+    </task>
+    <task id="LOCAL-00003" summary="-create checkbox test&#10;-create radiobutton test">
+      <option name="closed" value="true" />
+      <created>1723903845418</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723903845418</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,6 +209,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="-create checkbox test&#10;-create radiobutton test" />
+    <option name="LAST_COMMIT_MESSAGE" value="-create checkbox test&#10;-create radiobutton test" />
   </component>
 </project>
