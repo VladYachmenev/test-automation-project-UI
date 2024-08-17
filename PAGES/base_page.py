@@ -28,8 +28,8 @@ class BasePage:
     def elements_is_not_visible(self, locators, timeout=5):
         return Wait(self.driver, timeout).until(EC.invisibility_of_element_located(locators))
 
-    def scroll_to_go_element(self, locators):
-        return self.driver.execute_script("argument[0],scrollIntoView();", locators)
+    def scroll_to_go_element(self, element):
+        return self.driver.execute_script("arguments[0].scrollIntoView();", element)
 
     def scroll_with_pixiles(self):
         return self.driver.execute_script("window.scrollBy(0, 400);")

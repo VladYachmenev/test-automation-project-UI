@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="207d8a78-1ea4-45d1-8034-66cedf3f7319" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PET PROJECT.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LOCATOS/element_locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LOCATOS/elements_filled.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PAGES/base_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TESTS/test_element_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generator/generator.py" afterDir="false" />
+    <list default="true" id="207d8a78-1ea4-45d1-8034-66cedf3f7319" name="Changes" comment="first commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LOCATOS/element_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOCATOS/element_locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LOCATOS/elements_filled.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOCATOS/elements_filled.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PAGES/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/PAGES/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TESTS/test_element_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/TESTS/test_element_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Vlad228-ui&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Vlad228-ui/test_element_test.py.git&quot;,
+    &quot;accountId&quot;: &quot;513d0f82-7409-48f3-9bd5-30f4c73d849d&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -47,6 +50,9 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Python tests.Python tests for element_test.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements.test_checkbox.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_element_test.TestElements.TestRadioButtonElements.test_radiobutton.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_element_test.TestElements.TestTextElements.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_element_test.TestElements.TestTextElements.test.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_empty_values.executor&quot;: &quot;Run&quot;,
@@ -67,27 +73,50 @@
       <recent name="C:\Users\yachm\PycharmProjects\PET PROJECT\PAGES" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_element_test.TestElements.TestTextElements">
-    <configuration name="conftest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_element_test.TestElements.TestRadioButtonElements.test_radiobutton">
+    <configuration name="Python tests for test_element_test.TestElements.TestCheckBoxElements" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PET PROJECT" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TESTS" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\yachm\PycharmProjects\PET PROJECT\conftest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_element_test.TestElements.TestCheckBoxElements&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_element_test.TestElements.TestCheckBoxElements.test_checkbox" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PET PROJECT" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TESTS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_element_test.TestElements.TestCheckBoxElements.test_checkbox&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_element_test.TestElements.TestRadioButtonElements.test_radiobutton" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PET PROJECT" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TESTS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_element_test.TestElements.TestRadioButtonElements.test_radiobutton&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests for test_element_test.TestElements.TestTextElements" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -102,36 +131,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_element_test.TestElements.TestTextElements&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_element_test.TestElements.TestTextElements.test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PET PROJECT" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TESTS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_element_test.TestElements.TestTextElements.test&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_element_test.TestElements.TestTextElements.test_empty_values" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PET PROJECT" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TESTS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_element_test.TestElements.TestTextElements.test_empty_values&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -150,28 +149,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_element_test.TestElements.TestTextElements.test_valid_data" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PET PROJECT" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TESTS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_element_test.TestElements.TestTextElements.test_valid_data&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestRadioButtonElements.test_radiobutton" />
+        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements.test_checkbox" />
         <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestTextElements" />
+        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements" />
         <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_invalid" />
-        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_valid_data" />
-        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_empty_values" />
-        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestTextElements.test" />
       </list>
     </recent_temporary>
   </component>
@@ -191,6 +175,30 @@
       <option name="presentableId" value="Default" />
       <updated>1722956132603</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1723455638883</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723455638884</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>
