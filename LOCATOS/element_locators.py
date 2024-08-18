@@ -26,8 +26,16 @@ class RadioButtonPageLocators:
     BUTT0N_YES = (By.CSS_SELECTOR, 'div[class^="custom"] [for="yesRadio"]')
     BUTTON_IMPRESSIVE = (By.CSS_SELECTOR, 'div[class^="custom"] [for="impressiveRadio"]')
     BUTTON_N0 = (By.CSS_SELECTOR, 'div[class^="custom"] [for="noRadio"]')
-    OUTPUT_RADIOBUTTON = (By.CSS_SELECTOR,'span.text-success')
+    OUTPUT_RADIOBUTTON = (By.CSS_SELECTOR, 'span.text-success')
 
 
-
-
+class TablePageLocators:
+    class TableAddPageLocators:
+        BUTTON_ADD = (By.CSS_SELECTOR, 'button#addNewRecordButton')
+        FIRSTNAME_INPUT = (By.CSS_SELECTOR, 'input#firstName')
+        LASTNAME_INPUT = (By.CSS_SELECTOR, 'input#lastName')
+        EMAIL_INPUT = (By.CSS_SELECTOR, 'input#userEmail')
+        AGE_INPUT = (By.CSS_SELECTOR, 'input#age')
+        SALARY_INPUT = (By.CSS_SELECTOR, 'salary')
+        DEPARTAMENT_INPUT = (By.CSS_SELECTOR, 'input#department')
+        BUTTON_SUBMIT = (By.CSS_SELECTOR, 'button#submit')

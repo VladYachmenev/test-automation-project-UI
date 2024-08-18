@@ -58,3 +58,9 @@ class TestElements:
 
             assert output_yes == 'Yes'
             assert output_impressive == 'Impressive'
+
+    class TestTable:
+        def test_add_person(self,driver):
+            radiobutton_page = RadioButtonPage(driver, 'https://demoqa.com/radio-button')
+            radiobutton_page.open()
+
