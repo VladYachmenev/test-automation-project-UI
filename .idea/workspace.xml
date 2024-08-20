@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="207d8a78-1ea4-45d1-8034-66cedf3f7319" name="Changes" comment="-create checkbox test&#10;-create radiobutton test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOCATOS/element_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOCATOS/element_locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TESTS/test_element_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/TESTS/test_element_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
