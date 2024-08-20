@@ -1,8 +1,8 @@
-from LOCATOS.element_locators import TextBoxLocators, CheckBoxPageLocators, RadioButtonPageLocators
+from LOCATOS.element_locators import TextBoxLocators, CheckBoxPageLocators, RadioButtonPageLocators, TablePageLocators
 from PAGES.base_page import BasePage
 import time
 from selenium.webdriver.common.by import By
-from generator.generator import generated_person, generated_person2
+from generator.generator import generated_person, generated_person2, generated_new_person
 import random
 
 
@@ -101,13 +101,65 @@ class RadioButtonPage(BasePage):
         return output_value
 
 
+class TablePage(BasePage):
+    locators = TablePageLocators()
+
+    def click_button_add(self):
+        self.element_is_visible(self.locators.BUTTON_ADD).click()
+
+    def add_new_person(self):
+        person_info = next(generated_new_person())
+        first_name = person_info.first_name
+        last_name = person_info.last_name
+        email = person_info.email
+        age = person_info.age
+        salary = person_info.salary
+        department = person_info.department
+        self.element_is_visible(self.locators.FIRSTNAME_INPUT).send_keys(first_name)
+        self.element_is_visible(self.locators.LASTNAME_INPUT).send_keys(last_name)
+        self.element_is_visible(self.locators.EMAIL_INPUT).send_keys(email)
+        self.element_is_visible(self.locators.AGE_INPUT).send_keys(age)
+        self.element_is_visible(self.locators.SALARY_INPUT).send_keys(salary)
+        self.element_is_visible(self.locators.DEPARTAMENT_INPUT).send_keys(department)
+        self.element_is_visible(self.locators.BUTTON_SUBMIT).click()
+        return first_name, last_name, str(age), email, str(salary), department
+
+    def check_new_person(self):
+        all_data = self.elements_are_present(self.locators.ALL_DATA)
+        list_data = []
+        for elem in all_data:
+            list_data.append(elem.text)
+        list_data.pop(-1)
+        return list_data
+
+    def add_new_person_empty_data(self):
+        self.element_is_clickable(self.locators.BUTTON_SUBMIT).click()
+
+    def check_new_person_empty_data(self):
+        if self.element_is_present(self.locators.USER_NOT_VALIDATED_FORM):
+            return True
+
+    def add_new_person_invalid_data(self):
+        person_info = next(generated_new_person())
+        first_name = person_info.first_name
+        last_name = person_info.last_name
+        email = person_info.invalid_email
+        age = person_info.age
+        salary = person_info.salary
+        department = person_info.department
+        self.element_is_visible(self.locators.FIRSTNAME_INPUT).send_keys(first_name)
+        self.element_is_visible(self.locators.LASTNAME_INPUT).send_keys(last_name)
+        self.element_is_visible(self.locators.EMAIL_INPUT).send_keys(email)
+        self.element_is_visible(self.locators.AGE_INPUT).send_keys(age)
+        self.element_is_visible(self.locators.SALARY_INPUT).send_keys(salary)
+        self.element_is_visible(self.locators.DEPARTAMENT_INPUT).send_keys(department)
+        self.element_is_visible(self.locators.BUTTON_SUBMIT).click()
 
 
+    def search_person(self, keyword):
+        self.element_is_visible(self.locators.SEARCH_INPUT).send_keys(keyword)
 
-
-
-
-
-
-
-
+    def check_search_person(self):
+        delete_button = self.element_is_visible(self.locators.DELETE_BUTTON)
+        person_info = delete_button.find_element(By.XPATH, self.locators.USER_DATA)
+        return person_info.text.splitlines()
