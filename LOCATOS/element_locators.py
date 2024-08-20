@@ -30,12 +30,21 @@ class RadioButtonPageLocators:
 
 
 class TablePageLocators:
-    class TableAddPageLocators:
-        BUTTON_ADD = (By.CSS_SELECTOR, 'button#addNewRecordButton')
-        FIRSTNAME_INPUT = (By.CSS_SELECTOR, 'input#firstName')
-        LASTNAME_INPUT = (By.CSS_SELECTOR, 'input#lastName')
-        EMAIL_INPUT = (By.CSS_SELECTOR, 'input#userEmail')
-        AGE_INPUT = (By.CSS_SELECTOR, 'input#age')
-        SALARY_INPUT = (By.CSS_SELECTOR, 'salary')
-        DEPARTAMENT_INPUT = (By.CSS_SELECTOR, 'input#department')
-        BUTTON_SUBMIT = (By.CSS_SELECTOR, 'button#submit')
+    #добавление пользователя
+    BUTTON_ADD = (By.CSS_SELECTOR, 'button#addNewRecordButton')
+    FIRSTNAME_INPUT = (By.CSS_SELECTOR, 'input#firstName')
+    LASTNAME_INPUT = (By.CSS_SELECTOR, 'input#lastName')
+    EMAIL_INPUT = (By.CSS_SELECTOR, 'input#userEmail')
+    AGE_INPUT = (By.CSS_SELECTOR, 'input#age')
+    SALARY_INPUT = (By.CSS_SELECTOR, 'input#salary')
+    DEPARTAMENT_INPUT = (By.CSS_SELECTOR, 'input#department')
+    BUTTON_SUBMIT = (By.CSS_SELECTOR, 'button#submit')
+    ALL_DATA = (By.XPATH, '//div[@class="rt-tbody"]/div[4]//div[@class="rt-td"]')
+
+    USER_NOT_VALIDATED_FORM = (By.CSS_SELECTOR, 'form.was-validated')
+    #поиск пользователя
+    SEARCH_INPUT = (By.CSS_SELECTOR, 'input#searchBox')
+    DELETE_BUTTON = (By.CSS_SELECTOR, 'span[title="Delete"]')
+    USER_DATA = ".//ancestor::div[@class='rt-tr-group']"
+
+

@@ -1,4 +1,7 @@
-from LOCATOS.elements_filled import TextBoxPage, CheckBoxPage, RadioButtonPage
+import random
+import time
+
+from LOCATOS.elements_filled import TextBoxPage, CheckBoxPage, RadioButtonPage, TablePage
 from conftest import driver
 
 
@@ -22,7 +25,7 @@ class TestElements:
             text_page.scroll()
             text_page.click_submit()
             empty_value = text_page.check_empty_field()
-            assert empty_value == True
+            assert empty_value
 
         def test_invalid_data(self, driver):
             text_page = TextBoxPage(driver, 'https://demoqa.com/text-box')
@@ -60,7 +63,39 @@ class TestElements:
             assert output_impressive == 'Impressive'
 
     class TestTable:
-        def test_add_person(self,driver):
-            radiobutton_page = RadioButtonPage(driver, 'https://demoqa.com/radio-button')
-            radiobutton_page.open()
+        def test_add_person_valid_data(self, driver):
+            table_page = TablePage(driver, 'https://demoqa.com/webtables')
+            table_page.open()
+            table_page.click_button_add()
+            input_list = list(table_page.add_new_person())
+            output_list = table_page.check_new_person()
+            print(input_list)
+            print(output_list)
+            assert input_list == output_list
 
+        def test_add_person_empty_data(self, driver):
+            table_page = TablePage(driver, 'https://demoqa.com/webtables')
+            table_page.open()
+            table_page.click_button_add()
+            table_page.add_new_person_empty_data()
+            empty_form = table_page.check_new_person_empty_data()
+            assert empty_form
+
+        def test_add_person_invalid_data(self,driver):
+            table_page = TablePage(driver, 'https://demoqa.com/webtables')
+            table_page.open()
+            table_page.click_button_add()
+            table_page.add_new_person_invalid_data()
+            empty_form = table_page.check_new_person_empty_data()
+            assert empty_form
+
+        def test_search_person(self, driver):
+            table_page = TablePage(driver, 'https://demoqa.com/webtables')
+            table_page.open()
+            table_page.click_button_add()
+            key_word = list(table_page.add_new_person())[random.randint(1, 4)]
+            table_page.search_person(key_word)
+            person_list = table_page.check_search_person()
+            print(person_list)
+            print(key_word)
+            assert key_word in person_list
