@@ -1,6 +1,8 @@
+from selenium.webdriver import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait as Wait
 from selenium.webdriver.support import expected_conditions as EC
 from conftest import driver
+
 
 class BasePage:
     def __init__(self, driver, url):
@@ -33,3 +35,16 @@ class BasePage:
 
     def scroll_with_pixiles(self):
         return self.driver.execute_script("window.scrollBy(0, 400);")
+
+    def double_click(self, element):
+        action = ActionChains(self.driver)
+        action.double_click(element)
+        action.perform()
+
+    def right_click(self, element):
+        action = ActionChains(self.driver)
+        action.context_click(element)
+        action.perform()
+
+
+

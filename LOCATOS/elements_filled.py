@@ -1,4 +1,5 @@
-from LOCATOS.element_locators import TextBoxLocators, CheckBoxPageLocators, RadioButtonPageLocators, TablePageLocators
+from LOCATOS.element_locators import TextBoxLocators, CheckBoxPageLocators, RadioButtonPageLocators, TablePageLocators, \
+    ButtonsPageLocators
 from PAGES.base_page import BasePage
 import time
 from selenium.webdriver.common.by import By
@@ -155,11 +156,58 @@ class TablePage(BasePage):
         self.element_is_visible(self.locators.DEPARTAMENT_INPUT).send_keys(department)
         self.element_is_visible(self.locators.BUTTON_SUBMIT).click()
 
-
     def search_person(self, keyword):
         self.element_is_visible(self.locators.SEARCH_INPUT).send_keys(keyword)
+
+    def clear_search_person(self):
+        self.element_is_visible(self.locators.SEARCH_INPUT).clear()
 
     def check_search_person(self):
         delete_button = self.element_is_visible(self.locators.DELETE_BUTTON)
         person_info = delete_button.find_element(By.XPATH, self.locators.USER_DATA)
         return person_info.text.splitlines()
+
+    def update_person_info(self):
+        person_info = next(generated_new_person())
+        first_name = person_info.first_name
+        self.element_is_visible(self.locators.BUTTON_UPDATE).click()
+        self.element_is_visible(self.locators.FIRSTNAME_INPUT).clear()
+        self.element_is_visible(self.locators.FIRSTNAME_INPUT).send_keys(first_name)
+        self.element_is_visible(self.locators.BUTTON_SUBMIT).click()
+        return first_name
+
+    def delete_person(self):
+        self.element_is_visible(self.locators.DELETE_BUTTON).click()
+
+    def check_delete_person(self):
+        return self.element_is_visible(self.locators.NO_USERS).text
+
+
+class ButtonsPage(BasePage):
+    locators = ButtonsPageLocators()
+
+    def click_double_button(self):
+        self.double_click(self.element_is_visible(self.locators.BUTTON_DOUBLE_CLICK))
+
+    def click_right_button(self):
+        self.right_click(self.element_is_visible(self.locators.BUTTON_RIGHT_CLICK))
+
+    def click_me_button(self):
+        self.element_is_visible(self.locators.BUTTON_CLICK_ME).click()
+
+    def check_buttons(self, button):
+        if button == 'double_button':
+            return self.element_is_present(self.locators.SUCCESS_DOUBLE_CLICK).text
+        if button == 'right_button':
+            return self.element_is_present(self.locators.SUCCESS_RIGHT_CLICK).text
+        if button == 'click_me_button':
+            return self.element_is_present(self.locators.SUCCESS_CLICK_ME).text
+
+
+
+
+
+
+
+
+

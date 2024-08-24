@@ -26,3 +26,4 @@ class NewPerson:
     salary: int = None
     department: str = None
     invalid_email: str = None
+

@@ -1,7 +1,7 @@
 import random
 import time
 
-from LOCATOS.elements_filled import TextBoxPage, CheckBoxPage, RadioButtonPage, TablePage
+from LOCATOS.elements_filled import TextBoxPage, CheckBoxPage, RadioButtonPage, TablePage, ButtonsPage
 from conftest import driver
 
 
@@ -99,3 +99,41 @@ class TestElements:
             print(person_list)
             print(key_word)
             assert key_word in person_list
+
+        def test_update_person(self,driver):
+            table_page = TablePage(driver, 'https://demoqa.com/webtables')
+            table_page.open()
+            table_page.click_button_add()
+            key = list(table_page.add_new_person())[1]
+            table_page.search_person(key)
+            first_name = table_page.update_person_info()
+            person_list = table_page.check_search_person()
+            assert first_name in person_list
+
+        def test_delete_person(self,driver):
+            table_page = TablePage(driver, 'https://demoqa.com/webtables')
+            table_page.open()
+            table_page.click_button_add()
+            key = list(table_page.add_new_person())[1]
+            table_page.search_person(key)
+            table_page.delete_person()
+            no_person_list = table_page.check_delete_person()
+            assert no_person_list == "No rows found"
+
+    class TestButtons:
+        def test_buttons(self, driver):
+            buttons_page = ButtonsPage(driver, 'https://demoqa.com/buttons')
+            buttons_page.open()
+            buttons_page.click_double_button()
+            text_double_button = buttons_page.check_buttons('double_button')
+            buttons_page.click_right_button()
+            text_right_button = buttons_page.check_buttons('right_button')
+            buttons_page.click_me_button()
+            text_click_me_button = buttons_page.check_buttons('click_me_button')
+            assert text_double_button == "You have done a double click"
+            assert text_right_button == "You have done a right click"
+            assert text_click_me_button == "You have done a dynamic click"
+
+
+
+

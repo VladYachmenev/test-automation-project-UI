@@ -1,6 +1,7 @@
-from data.data import Person, Person2,NewPerson
+from data.data import Person, Person2, NewPerson
 from faker import Faker
 import random
+
 faker_ru = Faker('ru_RU')
 Faker.seed()
 
@@ -29,8 +30,14 @@ def generated_new_person():
         first_name=faker_ru.first_name(),
         last_name=faker_ru.last_name(),
         email=faker_ru.email(),
-        age=random.randint(10,90),
-        salary=random.randint(1000,90000),
+        age=random.randint(10, 90),
+        salary=random.randint(1000, 90000),
         department=faker_ru.city(),
-        invalid_email=faker_ru.url()
+        invalid_email=faker_ru.url(),
     )
+
+
+
+
+
+

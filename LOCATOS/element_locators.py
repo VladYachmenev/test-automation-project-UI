@@ -47,4 +47,20 @@ class TablePageLocators:
     DELETE_BUTTON = (By.CSS_SELECTOR, 'span[title="Delete"]')
     USER_DATA = ".//ancestor::div[@class='rt-tr-group']"
 
+    #изменение пользователя
+    BUTTON_UPDATE = (By.CSS_SELECTOR, 'span[title="Edit"]')
+
+    #удаление пользователя
+    NO_USERS = (By.CSS_SELECTOR, 'div.rt-noData')
+
+
+class ButtonsPageLocators:
+    BUTTON_DOUBLE_CLICK = (By.CSS_SELECTOR, 'button#doubleClickBtn')
+    BUTTON_RIGHT_CLICK = (By.CSS_SELECTOR, 'button#rightClickBtn')
+    BUTTON_CLICK_ME = (By.XPATH, './/div[3]/button')
+
+    SUCCESS_DOUBLE_CLICK = (By.CSS_SELECTOR, 'p#doubleClickMessage')
+    SUCCESS_RIGHT_CLICK = (By.CSS_SELECTOR, 'p#rightClickMessage')
+    SUCCESS_CLICK_ME = (By.CSS_SELECTOR, 'p#dynamicClickMessage')
+
 

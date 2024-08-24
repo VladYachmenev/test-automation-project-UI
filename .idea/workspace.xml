@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="207d8a78-1ea4-45d1-8034-66cedf3f7319" name="Changes" comment="-create checkbox test&#10;-create radiobutton test">
+    <list default="true" id="207d8a78-1ea4-45d1-8034-66cedf3f7319" name="Changes" comment="-">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LOCATOS/element_locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOCATOS/element_locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LOCATOS/elements_filled.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOCATOS/elements_filled.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PAGES/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/PAGES/base_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TESTS/test_element_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/TESTS/test_element_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/generator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -45,25 +54,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for element_test.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements.test_checkbox.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestRadioButtonElements.test_radiobutton.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestTextElements.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestTextElements.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_empty_values.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_invalid.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_valid_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.conftest (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.conftest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for element_test.test.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestButtons.test_buttons.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements.test_checkbox.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestRadioButtonElements.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestRadioButtonElements.test_radiobutton.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTable.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTable.test_add_person_invalid_data.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTable.test_delete_person.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTable.test_search_person.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTable.test_update_person.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTextElements.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTextElements.test.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_empty_values.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_invalid.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_valid_data.executor": "Run",
+    "Python tests.Python tests for test_element_test.test.executor": "Run",
+    "Python.conftest (1).executor": "Run",
+    "Python.conftest.executor": "Run",
+    "Python.elements_filled.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\yachm\PycharmProjects\PET PROJECT" />
@@ -71,8 +89,8 @@
       <recent name="C:\Users\yachm\PycharmProjects\PET PROJECT\PAGES" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_element_test.TestElements.TestRadioButtonElements.test_radiobutton">
-    <configuration name="Python tests for test_element_test.TestElements.TestCheckBoxElements" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_element_test.TestElements.TestButtons.test_buttons">
+    <configuration name="Python tests for test_element_test.TestElements.TestButtons.test_buttons" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PET PROJECT" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,11 +101,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_element_test.TestElements.TestCheckBoxElements&quot;" />
+      <option name="_new_target" value="&quot;test_element_test.TestElements.TestButtons.test_buttons&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_element_test.TestElements.TestCheckBoxElements.test_checkbox" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_element_test.TestElements.TestTable.test_add_person_invalid_data" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PET PROJECT" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,11 +116,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_element_test.TestElements.TestCheckBoxElements.test_checkbox&quot;" />
+      <option name="_new_target" value="&quot;test_element_test.TestElements.TestTable.test_add_person_invalid_data&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_element_test.TestElements.TestRadioButtonElements.test_radiobutton" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_element_test.TestElements.TestTable.test_delete_person" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PET PROJECT" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,11 +131,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_element_test.TestElements.TestRadioButtonElements.test_radiobutton&quot;" />
+      <option name="_new_target" value="&quot;test_element_test.TestElements.TestTable.test_delete_person&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_element_test.TestElements.TestTextElements" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_element_test.TestElements.TestTable.test_search_person" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PET PROJECT" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,11 +146,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_element_test.TestElements.TestTextElements&quot;" />
+      <option name="_new_target" value="&quot;test_element_test.TestElements.TestTable.test_search_person&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_element_test.TestElements.TestTextElements.test_invalid" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_element_test.TestElements.TestTable.test_update_person" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PET PROJECT" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,17 +161,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_element_test.TestElements.TestTextElements.test_invalid&quot;" />
+      <option name="_new_target" value="&quot;test_element_test.TestElements.TestTable.test_update_person&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestRadioButtonElements.test_radiobutton" />
-        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements.test_checkbox" />
-        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestTextElements" />
-        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements" />
-        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_invalid" />
+        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestButtons.test_buttons" />
+        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestTable.test_delete_person" />
+        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestTable.test_update_person" />
+        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestTable.test_add_person_invalid_data" />
+        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestTable.test_search_person" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723903845418</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="-create checkbox test&#10;-create radiobutton test">
+      <option name="closed" value="true" />
+      <created>1724162155998</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724162155999</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
