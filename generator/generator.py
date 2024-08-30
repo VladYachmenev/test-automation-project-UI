@@ -37,7 +37,10 @@ def generated_new_person():
     )
 
 
-
-
-
+def generate_file():
+    path = rf'C:\Users\yachm\OneDrive\Рабочий стол\ТЕСТИРОВКА\ТЕОРИЯ\file{random.randint(0, 90)}.txt'
+    new_file = open(path, 'w+')
+    new_file.write('This is new file')
+    new_file.close()
+    return new_file.name, path
 

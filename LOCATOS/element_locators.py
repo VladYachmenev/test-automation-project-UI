@@ -64,3 +64,19 @@ class ButtonsPageLocators:
     SUCCESS_CLICK_ME = (By.CSS_SELECTOR, 'p#dynamicClickMessage')
 
 
+class LinksPageLocators:
+    NEW_TAB_LINK = (By.CSS_SELECTOR, 'a#simpleLink')
+
+    #api call
+    CREATED_LINK = (By.CSS_SELECTOR, 'a#created')
+    NO_CONTENT_LINK = (By.CSS_SELECTOR, 'a#no-content')
+    UNAUTHORIZED_LINK = (By.CSS_SELECTOR, 'a#unauthorized')
+
+
+class UploadDownloadLocators:
+    SELECT_FILE_BUTTON = (By.CSS_SELECTOR, 'input#uploadFile')
+    FILE_PATH_TEXT = (By.CSS_SELECTOR, 'p#uploadedFilePath')
+
+    FILE_DOWNLOAD_BUTTON = (By.CSS_SELECTOR, 'a#downloadButton')
+
+

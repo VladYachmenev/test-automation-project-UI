@@ -1,9 +1,14 @@
+import base64
+import os
+import imghdr
+import requests
+
 from LOCATOS.element_locators import TextBoxLocators, CheckBoxPageLocators, RadioButtonPageLocators, TablePageLocators, \
-    ButtonsPageLocators
+    ButtonsPageLocators, LinksPageLocators, UploadDownloadLocators
 from PAGES.base_page import BasePage
 import time
 from selenium.webdriver.common.by import By
-from generator.generator import generated_person, generated_person2, generated_new_person
+from generator.generator import generated_person, generated_person2, generated_new_person, generate_file
 import random
 
 
@@ -202,6 +207,70 @@ class ButtonsPage(BasePage):
             return self.element_is_present(self.locators.SUCCESS_RIGHT_CLICK).text
         if button == 'click_me_button':
             return self.element_is_present(self.locators.SUCCESS_CLICK_ME).text
+
+
+class LinksPage(BasePage):
+    locators = LinksPageLocators()
+
+    def check_new_tab_link(self):
+        simple_link = self.element_is_visible(self.locators.NEW_TAB_LINK)
+        link = simple_link.get_attribute('href')
+        request = requests.get(link)
+        if request.status_code == 200:
+            simple_link.click()
+            self.switch_new_tab()
+            current_link_new_tab = self.driver.current_url
+            return link, current_link_new_tab
+        else:
+            print("Invalid link")
+
+    def check_api_call_links(self, link_name):
+        request = requests.get(f"https://demoqa.com/{link_name}")
+        return request.status_code
+
+
+class UploadDownloadPage(BasePage):
+    locators = UploadDownloadLocators()
+
+    def upload_new_file(self):
+        file, path = generate_file()
+        self.element_is_visible(self.locators.SELECT_FILE_BUTTON).send_keys(file)
+        os.remove(file)
+        path_text = self.element_is_present(self.locators.FILE_PATH_TEXT).text
+        return path_text.split('\\')[-1], path.split('\\')[-1]
+
+    def download_file(self):
+        link = self.element_is_visible(self.locators.FILE_DOWNLOAD_BUTTON).get_attribute('href')
+        link_b = base64.b64decode(link)
+        path_name_file = rf'C:\Users\yachm\OneDrive\Рабочий стол\ТЕСТИРОВКА\ТЕОРИЯ\file{random.randint(0, 90)}.jpg'
+        with open(path_name_file,'wb+') as f:
+            offset = link_b.find(b'\xff\xd8')
+            f.write(link_b[offset:])
+            check_file = os.path.abspath(path_name_file)
+            f.close()
+        return check_file
+
+    def check_download_file(self, filename):
+        fd = open(filename, 'rb').read()
+        return imghdr.what(None, fd)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

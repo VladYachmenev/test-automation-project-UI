@@ -1,7 +1,8 @@
 import random
 import time
 
-from LOCATOS.elements_filled import TextBoxPage, CheckBoxPage, RadioButtonPage, TablePage, ButtonsPage
+from LOCATOS.elements_filled import TextBoxPage, CheckBoxPage, RadioButtonPage, TablePage, ButtonsPage, LinksPage, \
+    UploadDownloadPage
 from conftest import driver
 
 
@@ -34,7 +35,7 @@ class TestElements:
             text_page.scroll()
             text_page.click_submit()
             empty_value = text_page.check_empty_field()
-            assert empty_value == True
+            assert empty_value
 
     class TestCheckBoxElements:
         def test_checkbox(self, driver):
@@ -69,8 +70,6 @@ class TestElements:
             table_page.click_button_add()
             input_list = list(table_page.add_new_person())
             output_list = table_page.check_new_person()
-            print(input_list)
-            print(output_list)
             assert input_list == output_list
 
         def test_add_person_empty_data(self, driver):
@@ -81,7 +80,7 @@ class TestElements:
             empty_form = table_page.check_new_person_empty_data()
             assert empty_form
 
-        def test_add_person_invalid_data(self,driver):
+        def test_add_person_invalid_data(self, driver):
             table_page = TablePage(driver, 'https://demoqa.com/webtables')
             table_page.open()
             table_page.click_button_add()
@@ -100,7 +99,7 @@ class TestElements:
             print(key_word)
             assert key_word in person_list
 
-        def test_update_person(self,driver):
+        def test_update_person(self, driver):
             table_page = TablePage(driver, 'https://demoqa.com/webtables')
             table_page.open()
             table_page.click_button_add()
@@ -110,7 +109,7 @@ class TestElements:
             person_list = table_page.check_search_person()
             assert first_name in person_list
 
-        def test_delete_person(self,driver):
+        def test_delete_person(self, driver):
             table_page = TablePage(driver, 'https://demoqa.com/webtables')
             table_page.open()
             table_page.click_button_add()
@@ -134,6 +133,43 @@ class TestElements:
             assert text_right_button == "You have done a right click"
             assert text_click_me_button == "You have done a dynamic click"
 
+    class TestLinks:
+        def test_links(self, driver):
+            links_page = LinksPage(driver, 'https://demoqa.com/links')
+            links_page.open()
+            new_tab_link, current_link = links_page.check_new_tab_link()
+            assert new_tab_link == current_link, 'Link is broken'
 
+        def test_api_call_links(self, driver):
+            links_page = LinksPage(driver, 'https://demoqa.com/links')
+            links_page.open()
+            created_link_status_code = links_page.check_api_call_links('created')
+            no_content_link = links_page.check_api_call_links('no-content')
+            unauthorized_link = links_page.check_api_call_links('unauthorized')
+            moved_link = links_page.check_api_call_links('moved')
+            bad_request_link = links_page.check_api_call_links('bad-request')
+            forbidden_link = links_page.check_api_call_links('forbidden')
+            not_found_link = links_page.check_api_call_links('invalid-url')
+            assert created_link_status_code == 201, 'inappropriate status code'
+            assert no_content_link == 204, 'inappropriate status code'
+            assert unauthorized_link == 401, 'inappropriate status code'
+            assert moved_link == 301, 'inappropriate status code'
+            assert bad_request_link == 400, 'inappropriate status code'
+            assert forbidden_link == 403, 'inappropriate status code'
+            assert not_found_link == 404, 'inappropriate status code'
+
+    class TestUploadDownload:
+        def test_upload_file(self, driver):
+            upload_page = UploadDownloadPage(driver, 'https://demoqa.com/upload-download')
+            upload_page.open()
+            file_path, path_text_result = upload_page.upload_new_file()
+            assert file_path == path_text_result, 'file not loaded'
+
+        def test_download_file(self, driver):
+            download_page = UploadDownloadPage(driver, 'https://demoqa.com/upload-download')
+            download_page.open()
+            file_name = download_page.download_file()
+            file_format = download_page.check_download_file(file_name)
+            assert file_format == 'jpeg', 'file failed to download'
 
 
