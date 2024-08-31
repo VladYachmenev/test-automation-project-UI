@@ -76,7 +76,13 @@ class LinksPageLocators:
 class UploadDownloadLocators:
     SELECT_FILE_BUTTON = (By.CSS_SELECTOR, 'input#uploadFile')
     FILE_PATH_TEXT = (By.CSS_SELECTOR, 'p#uploadedFilePath')
-
     FILE_DOWNLOAD_BUTTON = (By.CSS_SELECTOR, 'a#downloadButton')
+
+
+class DynamicPropertiesLocators:
+    BUTTON_WILL_ENABLE = (By.CSS_SELECTOR, 'button#enableAfter')
+    BUTTON_VISIBLE_AFTER = (By.CSS_SELECTOR, 'button#visibleAfter')
+
+
 
 

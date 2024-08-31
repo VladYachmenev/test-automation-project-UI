@@ -2,9 +2,8 @@ import base64
 import os
 import imghdr
 import requests
-
 from LOCATOS.element_locators import TextBoxLocators, CheckBoxPageLocators, RadioButtonPageLocators, TablePageLocators, \
-    ButtonsPageLocators, LinksPageLocators, UploadDownloadLocators
+    ButtonsPageLocators, LinksPageLocators, UploadDownloadLocators, DynamicPropertiesLocators
 from PAGES.base_page import BasePage
 import time
 from selenium.webdriver.common.by import By
@@ -243,7 +242,7 @@ class UploadDownloadPage(BasePage):
         link = self.element_is_visible(self.locators.FILE_DOWNLOAD_BUTTON).get_attribute('href')
         link_b = base64.b64decode(link)
         path_name_file = rf'C:\Users\yachm\OneDrive\Рабочий стол\ТЕСТИРОВКА\ТЕОРИЯ\file{random.randint(0, 90)}.jpg'
-        with open(path_name_file,'wb+') as f:
+        with open(path_name_file, 'wb+') as f:
             offset = link_b.find(b'\xff\xd8')
             f.write(link_b[offset:])
             check_file = os.path.abspath(path_name_file)
@@ -255,28 +254,13 @@ class UploadDownloadPage(BasePage):
         return imghdr.what(None, fd)
 
 
+class DynamicPropertiesPage(BasePage):
+    locators = DynamicPropertiesLocators()
 
+    def check_button_will_enable(self):
+        if self.element_is_clickable(self.locators.BUTTON_WILL_ENABLE):
+            return True
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    def check_button_visible_after(self):
+        if self.element_is_visible(self.locators.BUTTON_VISIBLE_AFTER):
+            return True
