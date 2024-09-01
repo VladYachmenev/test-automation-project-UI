@@ -31,12 +31,12 @@
     &quot;assignee&quot;: &quot;Vlad228-ui&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Vlad228-ui/test_element_test.py.git&quot;,
-    &quot;accountId&quot;: &quot;513d0f82-7409-48f3-9bd5-30f4c73d849d&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Vlad228-ui/PET-PROJECT-AUTO-TEST.git",
+    "accountId": "513d0f82-7409-48f3-9bd5-30f4c73d849d"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
