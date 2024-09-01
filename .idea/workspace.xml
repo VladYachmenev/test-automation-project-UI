@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="207d8a78-1ea4-45d1-8034-66cedf3f7319" name="Changes" comment="-add allure new description">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PET-PROJECT-AUTO-TEST" beforeDir="false" />
-    </list>
+    <list default="true" id="207d8a78-1ea4-45d1-8034-66cedf3f7319" name="Changes" comment="-add allure new description" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,45 +46,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for element_test.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element.TestElements.TestTable.test_search_person.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestButtons.test_buttons.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements.test_checkbox.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestDynamicProperties.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestDynamicProperties.test_button_color_change.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestDynamicProperties.test_button_visible_after.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestDynamicProperties.test_button_will_enable.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestLinks.test_api_call_links.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestLinks.test_links.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestRadioButtonElements.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestRadioButtonElements.test_radiobutton.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestTable.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestTable.test_add_person_invalid_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestTable.test_delete_person.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestTable.test_search_person.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestTable.test_update_person.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestTextElements.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestTextElements.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_empty_values.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_invalid.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_valid_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestUploadDownload.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestUploadDownload.test_download_file.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.TestElements.TestUploadDownload.test_upload_file.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_element_test.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.conftest (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.conftest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.elements_filled.executor&quot;: &quot;Run&quot;,
-    &quot;Python.file.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for element_test.test.executor": "Run",
+    "Python tests.Python tests for test_element.TestElements.TestTable.test_search_person.executor": "Run",
+    "Python tests.Python tests for test_element.TestElements.TestTextElements.test_valid_data.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestButtons.test_buttons.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements.test_checkbox.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestDynamicProperties.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestDynamicProperties.test_button_color_change.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestDynamicProperties.test_button_visible_after.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestDynamicProperties.test_button_will_enable.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestLinks.test_api_call_links.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestLinks.test_links.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestRadioButtonElements.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestRadioButtonElements.test_radiobutton.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTable.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTable.test_add_person_invalid_data.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTable.test_delete_person.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTable.test_search_person.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTable.test_update_person.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTextElements.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTextElements.test.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_empty_values.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_invalid.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestTextElements.test_valid_data.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestUploadDownload.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestUploadDownload.test_download_file.executor": "Run",
+    "Python tests.Python tests for test_element_test.TestElements.TestUploadDownload.test_upload_file.executor": "Run",
+    "Python tests.Python tests for test_element_test.test.executor": "Run",
+    "Python.conftest (1).executor": "Run",
+    "Python.conftest.executor": "Run",
+    "Python.elements_filled.executor": "Run",
+    "Python.file.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\yachm\PycharmProjects\PET PROJECT" />
