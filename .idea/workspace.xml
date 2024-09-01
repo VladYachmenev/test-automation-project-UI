@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="207d8a78-1ea4-45d1-8034-66cedf3f7319" name="Changes" comment="-add allure new description" />
+    <list default="true" id="207d8a78-1ea4-45d1-8034-66cedf3f7319" name="Changes" comment="-add allure new description">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PET-PROJECT-AUTO-TEST" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +36,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/Vlad228-ui/PET-PROJECT-AUTO-TEST.git",
+    "url": "https://github.com/Vlad228-ui/test-automation-project.git",
     "accountId": "513d0f82-7409-48f3-9bd5-30f4c73d849d"
   }
 }]]></component>
