@@ -1,5 +1,5 @@
 import random
-from LOCATOS.elements_filled import TextBoxPage, CheckBoxPage, RadioButtonPage, TablePage, ButtonsPage, LinksPage, \
+from LOCATORS.elements_filled import TextBoxPage, CheckBoxPage, RadioButtonPage, TablePage, ButtonsPage, LinksPage, \
     UploadDownloadPage, DynamicPropertiesPage
 from conftest import driver
 import allure
@@ -108,8 +108,6 @@ class TestElements:
             key_word = list(table_page.add_new_person())[random.randint(1, 4)]
             table_page.search_person(key_word)
             person_list = table_page.check_search_person()
-            print(person_list)
-            print(key_word)
             assert key_word in person_list
 
         @allure.title('Add new person in table and update person info')

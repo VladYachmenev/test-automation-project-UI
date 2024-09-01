@@ -30,7 +30,7 @@ class RadioButtonPageLocators:
 
 
 class TablePageLocators:
-    #добавление пользователя
+    # add person
     BUTTON_ADD = (By.CSS_SELECTOR, 'button#addNewRecordButton')
     FIRSTNAME_INPUT = (By.CSS_SELECTOR, 'input#firstName')
     LASTNAME_INPUT = (By.CSS_SELECTOR, 'input#lastName')
@@ -42,15 +42,15 @@ class TablePageLocators:
     ALL_DATA = (By.XPATH, '//div[@class="rt-tbody"]/div[4]//div[@class="rt-td"]')
 
     USER_NOT_VALIDATED_FORM = (By.CSS_SELECTOR, 'form.was-validated')
-    #поиск пользователя
+    # search person
     SEARCH_INPUT = (By.CSS_SELECTOR, 'input#searchBox')
     DELETE_BUTTON = (By.CSS_SELECTOR, 'span[title="Delete"]')
     USER_DATA = ".//ancestor::div[@class='rt-tr-group']"
 
-    #изменение пользователя
+    # update person info
     BUTTON_UPDATE = (By.CSS_SELECTOR, 'span[title="Edit"]')
 
-    #удаление пользователя
+    # delete person
     NO_USERS = (By.CSS_SELECTOR, 'div.rt-noData')
 
 
@@ -67,7 +67,7 @@ class ButtonsPageLocators:
 class LinksPageLocators:
     NEW_TAB_LINK = (By.CSS_SELECTOR, 'a#simpleLink')
 
-    #api call
+    # api call links
     CREATED_LINK = (By.CSS_SELECTOR, 'a#created')
     NO_CONTENT_LINK = (By.CSS_SELECTOR, 'a#no-content')
     UNAUTHORIZED_LINK = (By.CSS_SELECTOR, 'a#unauthorized')

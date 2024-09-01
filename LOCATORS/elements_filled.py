@@ -3,7 +3,7 @@ import os
 import imghdr
 import allure
 import requests
-from LOCATOS.element_locators import TextBoxLocators, CheckBoxPageLocators, RadioButtonPageLocators, TablePageLocators, \
+from LOCATORS.element_locators import TextBoxLocators, CheckBoxPageLocators, RadioButtonPageLocators, TablePageLocators, \
     ButtonsPageLocators, LinksPageLocators, UploadDownloadLocators, DynamicPropertiesLocators
 from PAGES.base_page import BasePage
 import time
