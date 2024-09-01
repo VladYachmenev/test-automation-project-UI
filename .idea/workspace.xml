@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="207d8a78-1ea4-45d1-8034-66cedf3f7319" name="Changes" comment="-test dynamic&#10;-add allure description">
+    <list default="true" id="207d8a78-1ea4-45d1-8034-66cedf3f7319" name="Changes" comment="-add allure new description">
+      <change beforePath="$PROJECT_DIR$/.idea/PET PROJECT.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PET PROJECT.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LOCATOS/elements_filled.py" beforeDir="false" afterPath="$PROJECT_DIR$/LOCATOS/elements_filled.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +52,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python tests.Python tests for element_test.test.executor": "Run",
+    "Python tests.Python tests for test_element.TestElements.TestTable.test_search_person.executor": "Run",
     "Python tests.Python tests for test_element_test.TestElements.TestButtons.test_buttons.executor": "Run",
     "Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements.executor": "Run",
     "Python tests.Python tests for test_element_test.TestElements.TestCheckBoxElements.test_checkbox.executor": "Run",
@@ -94,7 +95,97 @@
       <recent name="C:\Users\yachm\PycharmProjects\PET PROJECT\PAGES" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_element_test.TestElements.TestDynamicProperties">
+  <component name="RunManager" selected="Python tests.Python tests for test_element.TestElements.TestTable.test_search_person">
+    <configuration name="Python tests for TESTS.test_element.TestElements" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PET PROJECT" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TESTS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TESTS.test_element.TestElements&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for TESTS.test_element.TestElements" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PET PROJECT" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TESTS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TESTS.test_element.TestElements&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for TESTS.test_element.TestElements" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PET PROJECT" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TESTS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TESTS.test_element.TestElements&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for TESTS.test_element.TestElements" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PET PROJECT" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TESTS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TESTS.test_element.TestElements&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for TESTS.test_element.TestElements" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PET PROJECT" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TESTS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TESTS.test_element.TestElements&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_element.TestElements.TestTable.test_search_person" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PET PROJECT" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TESTS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_element.TestElements.TestTable.test_search_person&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_element_test.TestElements.TestDynamicProperties" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="PET PROJECT" />
       <option name="ENV_FILES" value="" />
@@ -155,28 +246,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_element_test.TestElements.TestTable.test_add_person_invalid_data" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PET PROJECT" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TESTS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_element_test.TestElements.TestTable.test_add_person_invalid_data&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestDynamicProperties" />
-        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestDynamicProperties.test_button_visible_after" />
-        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestDynamicProperties.test_button_color_change" />
-        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestDynamicProperties.test_button_will_enable" />
-        <item itemvalue="Python tests.Python tests for test_element_test.TestElements.TestTable.test_add_person_invalid_data" />
+        <item itemvalue="Python tests.Python tests for test_element.TestElements.TestTable.test_search_person" />
+        <item itemvalue="Python tests.Python tests for TESTS.test_element.TestElements" />
+        <item itemvalue="Python tests.Python tests for TESTS.test_element.TestElements" />
+        <item itemvalue="Python tests.Python tests for TESTS.test_element.TestElements" />
+        <item itemvalue="Python tests.Python tests for TESTS.test_element.TestElements" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +328,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725110606488</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="-add allure new description">
+      <option name="closed" value="true" />
+      <created>1725144550995</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725144550996</updated>
+    </task>
+    <task id="LOCAL-00009" summary="-add allure new description">
+      <option name="closed" value="true" />
+      <created>1725208348664</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1725208348664</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,6 +364,7 @@
     <MESSAGE value="-test web table&#10;-test buttons" />
     <MESSAGE value="-test uploaddownload&#10;-test links" />
     <MESSAGE value="-test dynamic&#10;-add allure description" />
-    <option name="LAST_COMMIT_MESSAGE" value="-test dynamic&#10;-add allure description" />
+    <MESSAGE value="-add allure new description" />
+    <option name="LAST_COMMIT_MESSAGE" value="-add allure new description" />
   </component>
 </project>
